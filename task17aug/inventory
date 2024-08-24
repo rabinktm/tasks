@@ -1,0 +1,9 @@
+ubuntu2204  ansible_host=192.168.33.33 ansible_user=vagrant
+centos8 ansible_host=192.168.55.55 ansible_user=vagrant
+
+[websrvgrp]
+ubuntu2204
+
+[centossrvgrp]
+centos8
+

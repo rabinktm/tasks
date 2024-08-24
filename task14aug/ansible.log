@@ -1,0 +1,67 @@
+2024-08-24 05:09:26,211 p=2425 u=root n=ansible | PLAY [Setup DB server] *****************************************************************
+2024-08-24 05:09:26,227 p=2425 u=root n=ansible | TASK [Gathering Facts] *****************************************************************
+2024-08-24 05:09:36,281 p=2425 u=root n=ansible | fatal: [db1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.33.33 port 22: Connection timed out", "unreachable": true}
+2024-08-24 05:09:36,285 p=2425 u=root n=ansible | PLAY RECAP *****************************************************************************
+2024-08-24 05:09:36,286 p=2425 u=root n=ansible | db1                        : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-08-24 05:17:25,352 p=2540 u=root n=ansible | PLAY [Setup DB server] *****************************************************************
+2024-08-24 05:17:25,370 p=2540 u=root n=ansible | TASK [Gathering Facts] *****************************************************************
+2024-08-24 05:17:35,422 p=2540 u=root n=ansible | fatal: [db1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.33.33 port 22: Connection timed out", "unreachable": true}
+2024-08-24 05:17:35,424 p=2540 u=root n=ansible | PLAY RECAP *****************************************************************************
+2024-08-24 05:17:35,425 p=2540 u=root n=ansible | db1                        : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-08-24 05:18:28,805 p=2550 u=root n=ansible | PLAY [Setup DB server] *****************************************************************
+2024-08-24 05:18:28,819 p=2550 u=root n=ansible | TASK [Gathering Facts] *****************************************************************
+2024-08-24 05:18:32,135 p=2550 u=root n=ansible | ok: [db1]
+2024-08-24 05:18:32,162 p=2550 u=root n=ansible | TASK [Install MySQL server] ************************************************************
+2024-08-24 05:18:34,918 p=2550 u=root n=ansible | ok: [db1]
+2024-08-24 05:18:34,929 p=2550 u=root n=ansible | TASK [Install Python MySQL] ************************************************************
+2024-08-24 05:18:36,694 p=2550 u=root n=ansible | ok: [db1]
+2024-08-24 05:18:36,704 p=2550 u=root n=ansible | TASK [Start & Enable mariadb service] **************************************************
+2024-08-24 05:18:38,356 p=2550 u=root n=ansible | ok: [db1]
+2024-08-24 05:18:38,368 p=2550 u=root n=ansible | TASK [Create new database] *************************************************************
+2024-08-24 05:18:39,471 p=2550 u=root n=ansible | ok: [db1]
+2024-08-24 05:18:39,483 p=2550 u=root n=ansible | TASK [Create database user] ************************************************************
+2024-08-24 05:18:40,666 p=2550 u=root n=ansible | [WARNING]: Option column_case_sensitive is not provided. The default is now false, so
+the column's name will be uppercased. The default will be changed to true in
+community.mysql 4.0.0.
+
+2024-08-24 05:18:40,667 p=2550 u=root n=ansible | changed: [db1]
+2024-08-24 05:18:40,697 p=2550 u=root n=ansible | PLAY RECAP *****************************************************************************
+2024-08-24 05:18:40,698 p=2550 u=root n=ansible | db1                        : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-08-24 09:51:54,388 p=7559 u=root n=ansible | PLAY [Setup DB server] ***************************************************************
+2024-08-24 09:51:54,407 p=7559 u=root n=ansible | TASK [Gathering Facts] ***************************************************************
+2024-08-24 09:52:00,390 p=7559 u=root n=ansible | ok: [ubuntu2204]
+2024-08-24 09:52:00,424 p=7559 u=root n=ansible | TASK [Install MySQL server] **********************************************************
+2024-08-24 09:52:03,249 p=7559 u=root n=ansible | ok: [ubuntu2204]
+2024-08-24 09:52:03,274 p=7559 u=root n=ansible | TASK [Install Python MySQL] **********************************************************
+2024-08-24 09:52:05,724 p=7559 u=root n=ansible | ok: [ubuntu2204]
+2024-08-24 09:52:05,740 p=7559 u=root n=ansible | TASK [Start & Enable mariadb service] ************************************************
+2024-08-24 09:52:07,996 p=7559 u=root n=ansible | ok: [ubuntu2204]
+2024-08-24 09:52:08,012 p=7559 u=root n=ansible | TASK [Create new database] ***********************************************************
+2024-08-24 09:52:09,594 p=7559 u=root n=ansible | ok: [ubuntu2204]
+2024-08-24 09:52:09,618 p=7559 u=root n=ansible | TASK [Create database user] **********************************************************
+2024-08-24 09:52:11,391 p=7559 u=root n=ansible | [WARNING]: Option column_case_sensitive is not provided. The default is now false, so
+the column's name will be uppercased. The default will be changed to true in
+community.mysql 4.0.0.
+
+2024-08-24 09:52:11,395 p=7559 u=root n=ansible | changed: [ubuntu2204]
+2024-08-24 09:52:11,449 p=7559 u=root n=ansible | PLAY RECAP ***************************************************************************
+2024-08-24 09:52:11,450 p=7559 u=root n=ansible | ubuntu2204                 : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-08-24 09:53:18,299 p=7623 u=root n=ansible | PLAY [Setup DB server] ***************************************************************
+2024-08-24 09:53:18,316 p=7623 u=root n=ansible | TASK [Gathering Facts] ***************************************************************
+2024-08-24 09:53:24,744 p=7623 u=root n=ansible | ok: [ubuntu2204]
+2024-08-24 09:53:24,771 p=7623 u=root n=ansible | TASK [Install MySQL server] **********************************************************
+2024-08-24 09:53:28,149 p=7623 u=root n=ansible | ok: [ubuntu2204]
+2024-08-24 09:53:28,173 p=7623 u=root n=ansible | TASK [Install Python MySQL] **********************************************************
+2024-08-24 09:53:31,283 p=7623 u=root n=ansible | ok: [ubuntu2204]
+2024-08-24 09:53:31,308 p=7623 u=root n=ansible | TASK [Start & Enable mariadb service] ************************************************
+2024-08-24 09:53:33,345 p=7623 u=root n=ansible | ok: [ubuntu2204]
+2024-08-24 09:53:33,372 p=7623 u=root n=ansible | TASK [Create new database] ***********************************************************
+2024-08-24 09:53:34,947 p=7623 u=root n=ansible | ok: [ubuntu2204]
+2024-08-24 09:53:34,966 p=7623 u=root n=ansible | TASK [Create database user] **********************************************************
+2024-08-24 09:53:36,773 p=7623 u=root n=ansible | [WARNING]: Option column_case_sensitive is not provided. The default is now false, so
+the column's name will be uppercased. The default will be changed to true in
+community.mysql 4.0.0.
+
+2024-08-24 09:53:36,775 p=7623 u=root n=ansible | changed: [ubuntu2204]
+2024-08-24 09:53:36,820 p=7623 u=root n=ansible | PLAY RECAP ***************************************************************************
+2024-08-24 09:53:36,821 p=7623 u=root n=ansible | ubuntu2204                 : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

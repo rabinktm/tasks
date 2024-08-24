@@ -1,0 +1,11 @@
+usernames:
+- student1
+- student2
+- student3
+- student4
+
+ntp0: 0.nepal.pool.ntp.org
+ntp1: 1.nepal.pool.ntp.org
+ntp2: 2.nepal.pool.ntp.org
+ntp3: 3.nepal.pool.ntp.org
+

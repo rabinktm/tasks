@@ -1,0 +1,12 @@
+ubuntu2204  ansible_host=192.168.33.33 ansible_user=vagrant
+
+[websrvgrp]
+ubuntu2204
+
+[dbsrvgrp]
+ubuntu2204
+
+[maingrp1:children]
+websrvgrp
+dbsrvgrp
+
